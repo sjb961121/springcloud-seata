@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.itlaoqi.seata</groupId>
+    <artifactId>seata-springcloud-mybatis</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <!-- 注册中心 -->
+        <module>eureka-server</module>
+        <!-- 库存服务 -->
+        <module>storage</module>
+        <!-- 会员积分服务 -->
+        <module>points</module>
+        <!-- 订单服务 -->
+        <module>order</module>
+        <!-- Bussiness服务调用者，业务逻辑 -->
+        <module>bussiness</module>
+    </modules>
+</project>

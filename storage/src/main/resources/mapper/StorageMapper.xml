@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.itlaoqi.seata.storage.dao.StorageDAO" >
+  <select id="findByGoodsCode" parameterType="String" resultType="com.itlaoqi.seata.storage.entity.Storage">
+    select storage_id storageId,goods_code goodsCode,quantity from storage where goods_code = #{value}
+  </select>
+  <update id="update" parameterType="com.itlaoqi.seata.storage.entity.Storage">
+    UPDATE storage SET goods_code = #{goodsCode}, quantity = #{quantity} WHERE storage_id = #{storageId};
+  </update>
+</mapper>
